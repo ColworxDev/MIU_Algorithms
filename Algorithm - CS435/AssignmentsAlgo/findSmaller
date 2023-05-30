@@ -1,0 +1,32 @@
+
+
+class BinaryTree:
+    class Node:
+        def __init__(self, element, left=None, right=None):
+            self.element = element
+            self.left = left
+            self.right = right
+    
+    def __init__(self, root=None):
+        self.root = root
+        self.size = 1 if root is not None else 0
+    def isExternal(self):
+        return self.right == None and self.left == None
+    def element(self):
+        return self.element
+    def insertLast(self, x):
+        self.right = x
+    
+
+
+def findSmaller(T: BinaryTree, x):
+    S = []
+    #findHelper(T,X, T.)
+
+
+def findHelper(T: BinaryTree, x, p: BinaryTree, s):
+    if T.isExternal():
+        return s
+    if p.element() > x:
+        return s
+    s.in
